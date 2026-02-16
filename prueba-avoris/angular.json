@@ -28,7 +28,7 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
               }
             ],
             "styles": [
@@ -39,6 +39,11 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
+            },
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules"
+              ]
             }
           },
           "configurations": {
@@ -98,7 +103,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules"
+              ]
+            }
           }
         }
       }

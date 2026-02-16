@@ -1,0 +1,45 @@
+.carousel-container {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+}
+
+:host ::ng-deep{
+    .image-container {
+        max-width: 100%;
+        width: 100vw;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        height: 400px;
+    }
+
+    .igx-carousel {
+        width: 100%;
+        height: 100%;
+        height: 400px;
+    }
+
+    .igx-slide {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: auto;
+        min-height: 400px;
+    }
+
+    .igx-slide img {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        object-fit: cover;
+        height: 100%;
+
+        
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+            
+}
