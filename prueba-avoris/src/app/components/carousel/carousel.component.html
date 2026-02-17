@@ -1,9 +1,8 @@
 <div class="carousel-container">
   <igx-carousel #carousel>
     @for (slide of slides; track slide) {
-      <igx-slide>
-        <div class="image-container">
-          <img [src]="slide.src">
+      <igx-slide class="slide">
+        <div [class]="slide.class">
         </div>
       </igx-slide>
     }

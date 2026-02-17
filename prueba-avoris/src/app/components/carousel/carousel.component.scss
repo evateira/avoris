@@ -1,42 +1,36 @@
 .carousel-container {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     margin: 0;
 }
 
-:host ::ng-deep{
-    .image-container {
-        max-width: 100%;
-        width: 100vw;
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        height: 400px;
-    }
+:host ::ng-deep{    
 
     .igx-carousel {
-        width: 100%;
+        width: 100vw;
         height: 100%;
         height: 400px;
     }
-
-    .igx-slide {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        width: auto;
-        min-height: 400px;
+    
+    .image-bg {
+        width: 100%;
+        height: 100%;        
+        background-size: cover;
+        background-position: left center;
+        border: 0;
+        &.slide-1 {
+            background-image: url('../../../../public/avoris-bg-desktop.svg');
+        }
+        &.slide-2 {
+            background-image: url('../../../../public/avoris-bg-desktop.svg');
+            opacity: 0.5;
+        }
+        &.slide-3 {
+            background-image: url('../../../../public/avoris-bg-desktop.svg');
+            opacity: 0.2;
+        }
     }
-
-    .igx-slide img {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        object-fit: cover;
-        height: 100%;
-
-        
-    }
+    
 }
 
 

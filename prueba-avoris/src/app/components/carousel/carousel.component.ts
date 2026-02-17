@@ -15,16 +15,19 @@ import { IgxCarouselComponent, IgxSlideComponent } from 'igniteui-angular';
 export class CarouselComponent {
    public slides = [
       {
+        class: 'image-bg slide-1',
         src: 'avoris-bg-desktop.svg',
         title: 'Slide',
         description: 'This is the description for the first slide.'
       },
       {
+        class: 'image-bg slide-2',
         src: 'avoris-bg-desktop.svg',
         title: 'Slide',
         description: 'This is the description for the first slide.'
       },
       {
+        class: 'image-bg slide-3',
         src: 'avoris-bg-desktop.svg',
         title: 'Slide',
         description: 'This is the description for the first slide.'
