@@ -1,1 +1,86 @@
-<p>filters works!</p>
+<div class="filters">
+    <div class="filters-header">
+        <h3 class="filters-title">
+            Filtrar mi búsqueda
+        </h3>
+    </div>
+
+    <div class="filters-content">
+
+        <mat-accordion>
+            <mat-expansion-panel class="expansion">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <img class="icon" src="destinos.svg" />
+                        Destinos
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel opened class="expansion open">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="open">
+                        <img class="icon" src="aventura.svg" />
+                        Aventura
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                    <ul>                       
+                        <li>
+                            <mat-checkbox checked>
+                               Parapente
+                            </mat-checkbox>
+                        </li> 
+                         <li>
+                            <mat-checkbox >
+                               Parapente
+                            </mat-checkbox>
+                        </li>                        
+                    </ul>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel class="expansion">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <img class="icon" src="alojamientos.svg" />
+                        Destinos
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel class="expansion open">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="open">
+                        <img class="icon" src="precio-orange.svg" />
+                        Precio
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <mat-form-field class="form-field">
+                    <mat-label>
+                        <div class="label-content">
+                            <img class="icon" src="precio-violet.svg" />
+                            Mínimo
+                        </div>                        
+                    </mat-label>
+                    <input matInput type="text">                                           
+                </mat-form-field>
+                
+                <mat-form-field class="form-field">
+                    <mat-label>
+                        <div class="label-content">
+                             <img class="icon" src="precio-violet.svg" />
+                            Máximo
+                        </div>
+                       
+                    </mat-label>
+                    <input matInput type="text">                                           
+                </mat-form-field>
+
+            </mat-expansion-panel>
+
+
+
+        </mat-accordion>
+
+    </div>
+</div>

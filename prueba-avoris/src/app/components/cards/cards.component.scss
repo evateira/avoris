@@ -1,0 +1,19 @@
+.row-grid {
+    height: fit-content;
+    h4.cards-title {
+        font-family: "Syne", sans-serif;
+        font-size: 22px;
+        line-height: 24px;
+        color: #342e34;
+        margin: 0 0 16px;
+    }
+    mat-grid-list .grid-list {
+        padding: 0 0 24px;
+        height: fit-content;
+        min-height: 420px;
+        .grid-tile {
+            padding: 0 12px 8px 0;
+            height: fit-content;
+        }
+    }
+}
