@@ -1,16 +1,19 @@
 // src/app/app.module.ts
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  
   declarations: [
     AppComponent,
-    CarouselComponent,
+    MatToolbarModule,
   ],
   imports: [
     AppComponent,
-    CarouselComponent
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [

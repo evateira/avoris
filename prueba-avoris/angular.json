@@ -28,12 +28,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public",
+                "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": [              
+              "src/styles.scss"              
+            ],            
             "scripts": [],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -43,7 +43,13 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "node_modules"
-              ]
+              ],
+              "sass": {
+                "silenceDeprecations":[
+                  "import",
+                  "use"
+                ]
+              }
             }
           },
           "configurations": {
@@ -101,13 +107,13 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss"              
             ],
             "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "node_modules"
-              ]
+              ]              
             }
           }
         }

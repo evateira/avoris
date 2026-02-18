@@ -1,11 +1,5 @@
 
 @use "igniteui-angular/theming" as *;
-// Uncomment the following lines if you want to add a custom palette:
-// $primary: #731963 !default;
-// $secondary: #ce5712 !default;
-// $app-palette: palette($primary, $secondary, $surface);
-
-/* autoprefixer grid: on */
 
 @include core();
 @include typography($font-family: $material-typeface, $type-scale: $material-type-scale);
@@ -14,80 +8,115 @@
 @import 'minireset.css/minireset';
 
 
-:host {
-    --bright-blue: oklch(51.01% 0.274 263.83);
-    --electric-violet: oklch(53.18% 0.28 296.97);
-    --french-violet: oklch(47.66% 0.246 305.88);
-    --vivid-pink: oklch(69.02% 0.277 332.77);
-    --hot-red: oklch(61.42% 0.238 15.34);
-    --orange-red: oklch(63.32% 0.24 31.68);
 
-    --gray-900: oklch(19.37% 0.006 300.98);
-    --gray-700: oklch(36.98% 0.014 302.71);
-    --gray-400: oklch(70.9% 0.015 304.04);
-
-    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
-        180deg,
-        var(--orange-red) 0%,
-        var(--vivid-pink) 50%,
-        var(--electric-violet) 100%
-    );
-
-    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
-        90deg,
-        var(--orange-red) 0%,
-        var(--vivid-pink) 50%,
-        var(--electric-violet) 100%
-    );
-
-    --pill-accent: var(--bright-blue);
-
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol";
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    // Media
-    img {
-        height: 100%;
-        max-width: 100%;
-    }
-    video {  
-        height: 100%;
-        max-width: 100%;
-    }
+:host {    
 }
+
 
 h1 {
-font-size: 3.125rem;
-color: var(--gray-900);
-font-weight: 500;
-line-height: 100%;
-letter-spacing: -0.125rem;
-margin: 0;
-font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+    font-family: "Syne", sans-serif;
+}
+h2, h3, h4, h5, p, a, button {
+    font-family: "Nunito", sans-serif;
 }
 
-p {
-margin: 0;
-color: var(--gray-700);
+header {
+    width: 100%;
+    height: 80px;    
+    border-bottom-width: 1px;
+    background-color: #FFFFFF;
+    border-bottom: #FF8F50;    
 }
-
+.header-content {
+    width: 100%;
+    height: 80px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+img.logo {
+    width: fit-content;
+    height: 32px;
+}
+nav.menu {
+    width: 50%;
+    max-width: 763px;
+    height: 80px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+a.menu-item {
+    height: calc(100% - 1px);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #342E34;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+a.menu-item.active {
+    background-image: url('../public/item-active.png');
+    background-size: content;
+    background-position: center;
+}
 main {
-width: 100%;
-min-height: 100%;
-display: flex;
-justify-content: stretch;
-align-items: stretch;
-padding: 0;
-box-sizing: inherit;
-position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 0;
+    box-sizing: inherit;
+    position: relative;
 }
 
-.angular-logo {
-max-width: 9.2rem;
+
+.primary-button {
+    width: fit-content;   
+    display: flex;
+    align-self: center;
+    padding: 12px 40px;    
+    border-radius: 208px;    
+    background-color: #622F60;
+    color: #ffffff;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
+.secondary-button {
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    padding: 12px 40px;    
+    border-radius: 208px;    
+    background-color: #FF8F50;
+    color: #4E250E;
+    font-family: Nunito;
+    font-weight: 600;    
+    font-size: 16px;
+    line-height: 24px;
+}
+.white-button {
+    width: fit-content;
+    height: 40px;
+    gap: 10px;
+    opacity: 1;
+    padding: 12px 40px;    
+    border-width: 1px;
+    border-radius: 208px;
+    background-color: #ffffff;
+    color: #622F60;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
