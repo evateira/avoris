@@ -1,32 +1,29 @@
-<section class="row-grid">
-    <h4 class="cards-title">
-        Asia
-    </h4>
-    <mat-grid-list class="grid-list" cols="3">
-        <mat-grid-tile class="grid-tile">
-            <app-card></app-card>
-        </mat-grid-tile>
-        <mat-grid-tile class="grid-tile">
-            <app-card></app-card>
-        </mat-grid-tile>
-        <mat-grid-tile class="grid-tile">
-            <app-card></app-card>
-        </mat-grid-tile>
-    </mat-grid-list>
-</section>
-<section class="row-grid">
-    <h4 class="cards-title">
-        Asia
-    </h4>
-    <mat-grid-list class="grid-list" cols="3">
-        <mat-grid-tile class="grid-tile">
-            <app-card></app-card>
-        </mat-grid-tile>
-        <mat-grid-tile class="grid-tile">
-            <app-card></app-card>
-        </mat-grid-tile>
-        <mat-grid-tile class="grid-tile">
-            <app-card></app-card>
-        </mat-grid-tile>
-    </mat-grid-list>
-</section>
+<div class="container">
+    <section class="row-grid">
+        <h4 class="cards-title">
+            Asia
+        </h4><mat-grid-list class="grid-list" cols="12" gutterSize="24px">
+            <mat-grid-tile class="grid-tile"
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows">            
+                <app-card class="card-container"></app-card>
+            </mat-grid-tile>        
+        </mat-grid-list>
+        
+    </section>
+    <section class="row-grid">
+        <h4 class="cards-title">
+            Asia
+        </h4>
+        <mat-grid-list class="grid-list" cols="12" gutterSize="24px">
+            <mat-grid-tile class="grid-tile"
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows">
+                
+                <app-card class="card-container"></app-card>
+            </mat-grid-tile>        
+        </mat-grid-list>
+    </section>
+</div>

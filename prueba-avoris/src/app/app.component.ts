@@ -10,9 +10,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { CardComponent } from './components/card/card.component';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { LayoutModule } from '@angular/cdk/layout';
+
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,6 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     CarouselComponent,
     CardsComponent,       
-    CardComponent,    
     FiltersComponent,
     MatExpansionModule,
     MatCheckboxModule,
@@ -30,7 +30,8 @@ import { MatCardModule } from '@angular/material/card';
     MatFormFieldModule,
     FormsModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    LayoutModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -1,19 +1,26 @@
-<mat-card class="example-card" appearance="outlined">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button matButton>LIKE</button>
-    <button matButton>SHARE</button>
-  </mat-card-actions>
+<mat-card class="card">
+    <mat-card-header>        
+        <div class="header-card">           
+            <img  class="header-image" src="img-card.jpg" alt="Photo">
+            <img class="tag-image" src="tag-card.svg" alt="tag">
+        </div>        
+        
+     </mat-card-header>
+ 
+     <mat-card-content>
+        <p class="location">
+            Marruecos, África <span>9 días</span>
+        </p>
+        <p class="description">
+            Descubre Bangkok con Iberojet
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="price">
+            <span>Desde</span>        
+            <p class="price-number">248,00 €</p>
+            <button class="popover" matButton>Ver desglose </button>
+        </div>        
+        <button class="white-buttom" matButton>Reservar</button>
+    </mat-card-actions>
 </mat-card>
