@@ -1,0 +1,101 @@
+
+:host {
+   
+}
+
+.filters {
+    width: 100%;
+    min-height: 100%;    
+}
+.filters-header {
+    background-color: #FBF6F4;
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E0D9E0;
+    @media screen and (max-width: 1440px) {
+        border-radius: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+h3.filters-title {
+    font-family: "Nunito", sans-serif;
+    padding: 16px;
+    margin: 0;
+    color: #342E34;    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.filters-content {
+    background-color: #FBF6F4;
+    border-radius: 0 0 24px 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    mat-expansion-panel {
+        border-radius: 0;
+        box-shadow: none;
+
+        &.open {
+            .mat-expansion-panel-header-title.open {
+                color: #b85c28;
+            }
+            .mat-expansion-indicator {
+                color: #b85c28;
+            }
+        }
+        .mat-expansion-panel-header-title {
+            img {
+                margin-right: 8px;
+            }
+        }        
+        
+    }
+    mat-form-field {
+        padding: 0;
+        width: 100%;
+        
+        ::ng-deep .mat-mdc-text-field-wrapper {
+            width: 100%;
+            height: 48px;
+            display: flex;
+
+            padding: 0 12px;    
+            border: 1px solid #622f60;
+            border-radius: 208px;
+            background-color: #ffffff;
+            color: #622F60; 
+            .mat-mdc-form-field-infix {                
+                label {
+                    mat-label {
+                        .label-content {
+                            display: flex;
+                            align-items: center;                    
+                            font-family: Nunito;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            img {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }          
+            
+        }        
+        
+    }
+    @media screen and (max-width: 1440px) {
+        border-radius: 0;
+    }
+}

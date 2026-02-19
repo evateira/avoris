@@ -1,0 +1,77 @@
+<header class="header">
+  <div class="header-content">
+
+    <img class="logo" src="/logoMV.svg" alt="Logo" />
+
+    <nav class="menu">
+      <a class="menu-item active" aria-current="page" href="#">
+        <i class="icon-menu"></i>
+        Aventura
+      </a>
+      <a class="menu-item" href="#">
+        <i class="icon-menu"></i>
+        Destinos
+      </a>
+      <a class="menu-item" href="#">
+        <i class="icon-menu"></i>
+        Alojamiento
+      </a>
+      <a class="menu-item" href="#">
+        Sobre nosotrod
+      </a>
+    </nav>
+    
+    <button class="primary-button">Reserva</button>
+  
+  </div>
+  
+</header>
+
+
+
+<main class="main">
+  <section class="carousel">
+      <app-carousel></app-carousel>
+  </section>
+
+  <section class="content">
+    <div class="left-side top">
+        <app-filters></app-filters>
+    </div> 
+
+    <div class="main-title">
+      <h1 class="main-h1">
+        Vive tus propias aventuras
+      </h1>
+      <h2 class="main-h2">
+        Para los que les gusta explorar y conocer mundo sin complejos
+      </h2>
+    </div>
+
+    <div class="main-content">
+      <div class="left-side">
+        <app-filters></app-filters>
+      </div>
+      
+      <div class="right-side">              
+        <app-cards></app-cards>
+      </div>
+    </div>
+    
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="logo-container">
+    <img class="logo" src="/logoMV.svg" alt="Logo" />
+  </div>
+  <div class="bottom-bar">
+    <p class="bottom-text">
+      &#64; 2024 Waveless - Todos los derechos reservados.
+    </p>
+  </div>
+
+</footer>
+
+<router-outlet />

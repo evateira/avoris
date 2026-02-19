@@ -1,0 +1,120 @@
+
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+:host ::ng-deep{    
+
+    .igx-carousel {
+        width: 100%;
+        height: 400px;
+    }
+    .igx-carousel button {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+    .igx-carousel__arrow--prev {
+        background-image: url('../../../../public/icon-left.svg');
+        border-radius: 0;
+        margin-inline-start: 0;
+    }
+    .igx-carousel__arrow--next {
+        background-image: url('../../../../public/icon-right.svg');
+        border-radius: 0;
+        margin-inline-end: 0;
+    }
+    .igx-carousel button .igx-nav-arrow  {
+        opacity: 0;
+    }
+    .image-bg {
+        width: 100%;
+        height: 100%;        
+        background-size: cover;
+        background-position: left center;
+        border: 0;
+        &.slide-1 {
+            background-image: url('../../../../public/avoris-bg-desktop.svg');
+        }
+        &.slide-2 {
+            background-image: url('../../../../public/avoris-bg-desktop.svg');
+            opacity: 0.5;
+        }
+        &.slide-3 {
+            background-image: url('../../../../public/avoris-bg-desktop.svg');
+            opacity: 0.2;
+        }
+    }
+
+    .igx-carousel-indicators--end {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .igx-nav-dot--active {
+
+    }
+    .igx-nav-dot {
+        border: 1px solid;
+        border-color:  #FFFFFF;
+        background-color:  #FFFFFFB8;
+        width: 10px;
+        height: 10px;
+    }
+    .igx-nav-dot--active::after {
+        background-color: #FF8F50;
+    }
+    .slide-text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        color: #FFFFFF;
+
+
+        h1 {
+            font-family: "Syne", sans-serif;
+            font-weight: 700;
+            font-style: bold;
+            font-size: 30px;
+            line-height: 34px;
+            text-align: center;
+            margin: 0 0 12px;
+        }
+        h2 {
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+            margin: 0;
+        }
+        button.secondary-button {
+            width: fit-content;
+            height: 48px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding-top: 12px;
+            padding-right: 40px;
+            padding-bottom: 12px;
+            padding-left: 40px;
+            border-radius: 208px;            
+            background-color: #FF8F50;
+            margin: 32px 0 0;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 1023px) {
+            
+}
