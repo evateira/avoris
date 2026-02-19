@@ -16,6 +16,11 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #E0D9E0;
+    @media screen and (max-width: 1440px) {
+        border-radius: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 h3.filters-title {
     font-family: "Nunito", sans-serif;
@@ -90,5 +95,7 @@ h3.filters-title {
         }        
         
     }
-    
+    @media screen and (max-width: 1440px) {
+        border-radius: 0;
+    }
 }

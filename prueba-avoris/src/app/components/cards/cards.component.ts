@@ -27,9 +27,9 @@ export class CardsComponent implements OnInit {
 
 
   tiles: Tile[] = [
-    {cols: 12, rows: 1},
-    {cols: 12, rows: 1},
-    {cols: 12, rows: 1}
+    {cols: 12, rows: 12},
+    {cols: 12, rows: 12},
+    {cols: 12, rows: 12}
   ];
 
   constructor(public breakpointObserver: BreakpointObserver) {}
@@ -40,11 +40,11 @@ export class CardsComponent implements OnInit {
       .observe(['(max-width: 740px)'])
       .subscribe((state: BreakpointState) => {
         if (state.matches) {
-          console.log('Viewport is 500px or over!');
+          console.log('Viewport is less than 740px!');
           this.tiles = [
-            {cols: 12, rows: 12},
-            {cols: 12, rows: 12},
-            {cols: 12, rows: 12}
+            {cols: 12, rows: 15},
+            {cols: 12, rows: 15},
+            {cols: 12, rows: 15}
           ]
         }
       });
@@ -53,7 +53,7 @@ export class CardsComponent implements OnInit {
       .observe(['(min-width: 740px) and (max-width: 1024px)'])
       .subscribe((state: BreakpointState) => {
         if (state.matches) {
-          console.log('Viewport is 576px or over and less than 767px !');
+          console.log('Viewport is 741px or over and less than 1023px !');
           this.tiles = [
             {cols: 6, rows: 8},
             {cols: 6, rows: 8},
@@ -66,11 +66,11 @@ export class CardsComponent implements OnInit {
       .observe(['(min-width: 1024px)'])
       .subscribe((state: BreakpointState) => {
         if (state.matches) {
-          console.log('Viewport is 768px or over and less than 991px !');
+          console.log('Viewport is 1024px or over!');
           this.tiles = [
-            {cols: 4, rows: 4},
-            {cols: 4, rows: 4},
-            {cols: 4, rows: 4}
+            {cols: 4, rows: 6},
+            {cols: 4, rows: 6},
+            {cols: 4, rows: 6}
           ]
         }
       });   

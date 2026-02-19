@@ -6,9 +6,7 @@
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
-.row-grid {    
-    min-height: 420px;
-    
+.row-grid {     
     h4.cards-title {
         font-family: "Syne", sans-serif;
         font-size: 22px;
@@ -17,37 +15,17 @@
         margin: 0 0 16px;
     }
     mat-grid-list.grid-list {
-        display: grid;        
         gap: 24px;
         margin-bottom: 24px;
-        height: 420px;
-        min-height: 420px;
         width: 100%;
-        
         .grid-tile {                        
-            height: 420px;
-            min-height: 420px;
-            border-radius: 24px;
-
+            border-radius: 24px;  
             .card-container {
-                height: 100%;
+                padding-right:3px;
+                padding-left: 3px;
+                padding-bottom: 3px;
+                border-radius: 24px;
             }
-        }
-
-        @media screen and (min-width: 1024px) {
-            height: 430px;
-        }
-
-
-        @media screen and (max-width: 1023px) and (min-width: 740px) {
-            height: 760px;
-            min-height: 760px;  
-        }
-
-        @media screen and (max-width:740px) {
-            height: 1400px;
-            min-height: 1400px;     
-        }        
+        }   
     }
 }
-
